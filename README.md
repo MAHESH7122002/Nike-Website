@@ -17,5 +17,4 @@ This project is a fully responsive Nike-themed e-commerce website built using **
 
 - **React.js**: A JavaScript library for building fast and interactive user interfaces.
 - **Tailwind CSS**: A utility-first CSS framework for designing modern and responsive layouts.
-- **React Router**: For navigating between different sections of the website.
 - **Responsive Design**: Fully responsive design that adapts seamlessly to all screen sizes, providing a consistent user experience across devices.
