@@ -2,15 +2,17 @@
 const ShoeCard = ({imgURL,changeBigShoeImage,bigShoeImage}) => {
   
     const handleClick = () => {
+        console.log(bigShoeImage);
+        console.log(imgURL.bigShoe);
         if(bigShoeImage!=imgURL.bigShoe){
             changeBigShoeImage(imgURL.bigShoe);
         }
     }
 
     return (
-    <div className={`border 
+    <div className={`border-2
         rounded-xl
-        ${bigShoeImage === imgURL ? 'border-coral-red': 'border-transparent'}
+        ${bigShoeImage === imgURL.bigShoe ? 'border-coral-red': 'border-transparent'}
         cursor-pointer max-sm:flex-1
     `} onClick={handleClick}>
 
