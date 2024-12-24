@@ -16,6 +16,9 @@ export default {
       '4xl': ['48px', '58px'],
       '8xl': ['96px', '106px']
     },
+    animation: {
+      slidein: "slidein 1s ease var(--slidein-delay, 0) forwards",
+    },
     extend: {
       fontFamily: {
         palanquin: ['Palanquin', 'sans-serif'],
@@ -37,6 +40,18 @@ export default {
       },
       screens: {
         "wide": "1440px"
+      },
+      keyframes: {
+        slidein: {
+          from: {
+            opacity: "0",
+            transform: "translateY(-10px)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        }
       }
     },
   },
